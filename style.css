@@ -1,0 +1,115 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3, #9b59b6);
+    padding: 20px;
+}
+
+.container, .letter {
+    background: white;
+    max-width: 450px;
+    width: 100%;
+    padding: 35px 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 40px #0003;
+}
+
+.heart {
+    font-size: 65px;
+    margin-bottom: 15px;
+    animation: beat 1s infinite;
+}
+
+h1 {
+    color: #e91e63;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+button {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ad1457;
+    transform: scale(1.08);
+}
+
+.letter {
+    display: none;
+    animation: appear 1s ease;
+}
+
+.big-heart {
+    font-size: 70px;
+    margin: 20px;
+}
+
+.letter h2 {
+    color: #c2185b;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.love {
+    margin-top: 25px;
+    animation: beat 1s infinite;
+}
+
+.footer {
+    color: #e91e63;
+    font-size: 13px;
+}
+
+#surprise {
+    color: #e91e63;
+    margin-top: 20px;
+}
+
+@keyframes beat {
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+footer {
+    margin-top: 30px;
+    color: #e91e63;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2;
+}
